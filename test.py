@@ -33,6 +33,7 @@ with topCustomer:
     fig1 = plt.figure()
     plt.subplot(1,1,1)
     plt.style.use('ggplot')
-    final[measure].plot.barh(legend=False)
+    final[measure].plot.bar(legend=False)
+    plt.title('Top 10 Customers')
     st.pyplot(fig1)
 
