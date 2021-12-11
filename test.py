@@ -30,6 +30,9 @@ with topCustomer:
     final = final.loc[(year,)].sort_values(measure, ascending=False).head(10)
 
     # plot bar chart
-    fig=final[measure].plot.bar()
-    st.pyplot(fig)
+    fig1 = plt.figure()
+    plt.subplot(1,1,1)
+    plt.style.use('ggplot')
+    final[measure].plot.bar()
+    st.pyplot(fig1)
 
