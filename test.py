@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib
+import matplotlib.pyplot as plt
 
 #cmd = ('SELECT customerName, orderNumber, YEAR(orderDate) AS year, SUM(quantityOrdered * priceEach) AS total ' +
 #'FROM orders AS O ' +
