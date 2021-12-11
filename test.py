@@ -33,6 +33,6 @@ with topCustomer:
     fig1 = plt.figure()
     plt.subplot(1,1,1)
     plt.style.use('ggplot')
-    final[measure].plot.bar()
+    final[measure].plot.barh(legend=False)
     st.pyplot(fig1)
 
